@@ -170,12 +170,14 @@ def tebak_angka():
     
     #KALO TEBAKAN BENER, SKOR AKHIR MUNCUL
     if tebakan_bnr:
-        print("Congrats ! Tebakan nya dah Benar ")
+        print("Congrats ! Tebakan nya Benar !")
         print("Score Anda ",score)
+        time.sleep(3)
         
     #kalau score udah 0, game selesai
     else:
-        print("DAH KALAH NEH, KELUAR AJA")
+        print("Anda kurang beruntung! Akan diarahkan ke Menu Utama....")
+        time.sleep(3)
         
     #NYIMPEN UER DAN SKORNYA
     save_score = "{}#${}\n".format(input_user.user,score)
