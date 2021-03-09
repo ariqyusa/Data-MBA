@@ -4,12 +4,13 @@ import time
 import os
 from prettytable import PrettyTable as pt
 
+#Membuat file data user
 if not (os.path.isfile("user_data.txt")):
     new_file = open("user_data.txt", "w+")
     new_file.write("id;pass\n")
     new_file.close()
 
-## Highscore data
+# Highscore data
 if not os.path.isfile("user_score.txt"):
     new_file2 = open("user_score.txt", "w+")
     new_file.close()
@@ -18,7 +19,7 @@ if not os.path.isfile("user_score.txt"):
 
 #utk judul
 print("*" * 40)
-print("AYO TEBAK ANGKA")
+print("SELAMAT DATANG DI GAME TEBAK ANGKA!")
 print("*" * 40)
 
 def menu_utama():
